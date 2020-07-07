@@ -1,0 +1,1207 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+.colorAcc {
+    filter: invert(100%);
+}
+body {
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    color: #272727;
+    font-size: 19pt;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.notActive {
+    cursor: not-allowed;
+    /*color: gray;*/
+}
+.default {
+    cursor: default;
+}
+#responsive {
+    position: relative;
+}
+
+
+
+/*תפריט ניווט*/
+/*לוגו בתוך התפריט*/
+#homeLogo {
+    width: 135px;
+    margin-top: -16px;
+}
+
+#headerNav {
+    position: fixed;
+    width: 1280px;
+    top: 0px;
+    -webkit-box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.50);
+    box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.50);
+    z-index: 5;
+}
+/* שלב ראשון - העלמת תבליטים*/
+nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*שלב שני - תפריט אופקי וצמוד*/
+nav li a { 
+    display: inline-block;
+    float: right;
+}
+/*העיצוב עצמו*/
+#headerNav ul li a { 
+    display: block;
+    background-color: white;
+    color: #272727;
+    width: 256px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19pt;
+}
+
+#headerNav ul li .secondNavStains {
+    text-align: right;
+    padding-right: 60px;
+    width: 196px;
+}
+
+#headerNav ul li .navStainsInner {
+    text-align: right;
+    padding-right: 10px;
+    width: 246px;
+}
+
+#headerNav ul li #navSI {
+    position: absolute;
+    top: 0px;
+    right: 256px;
+}
+
+#headerNav ul li .secondNavKitchen {
+    text-align: right;
+    padding-right: 96px;
+    width: 160px;
+}
+
+#headerNav ul li #kitchenNav {
+    position: absolute;
+    top: 62px;
+    right: 768px;
+}
+
+#headerNav ul li #navKI {
+    position: absolute;
+    top: 185px;
+    right: 245px;
+}
+
+#headerNav ul li .navKitchenInner {
+    text-align: right;
+    padding-right: 5px;
+    width: 246px;
+}
+
+
+#headerNav ul li .topNav {
+    display: block;
+    background-color: white;
+    color: #272727;
+    width: 256px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19pt;
+}
+
+
+#headerNav ul li#kav img {
+    display: inline-block;
+}
+
+/*מעבר עכבר מוסיף תמונה*/
+#headerNav ul li:hover img {
+    display: inline-block;
+}
+
+/*מיקומים קווים*/
+/*קו הסרת כתמים*/
+#lineNav1 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 298px;
+    display: none;
+}
+
+/*קו כביסה*/
+#lineNav2 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 558px;
+    display: none;
+}
+
+/*קו מטבח*/
+#lineNav3 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 816px;
+    display: none;
+}
+
+/*קו שירותקלחת*/
+#lineNav4 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 1070px;
+    display: none;
+}
+
+/*מעבר עכבר משנה צבע*/
+#headerNav ul li a:hover {
+    position: relative;
+    color: #ea5746;
+    font-weight: bold;
+}
+
+/*הגדרות של תת תפריט*/
+#headerNav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+
+#headerNav ul li:hover ul {
+    display: block;
+    right: 256px;
+    height: -20px;
+    top: 62px;
+    -webkit-box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+    box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+}
+
+
+    /*הגדרות של תת תפריט משני*/
+
+    #headerNav ul li:hover ul li ul { /*תת תפריט לא יופיע ומיקומו יהיה קבוע*/
+        display: none;
+        position: absolute;
+    }
+
+    #headerNav ul li:hover ul li:hover ul {
+        display: block;
+        right: 256px;
+        height: -20px;
+        top: 60px;
+        -webkit-box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+        box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+    }
+
+
+#kitchenNav {
+    right: 768px;
+    top: 60px;
+}
+
+/*כפתור נגישות*/
+
+#accButton .blueSquareFull {
+    position: fixed;
+    top: 70px;
+    left: -10px;
+    width: 150px;
+    height: 55px;
+    z-index: 6;
+}
+
+
+#accButton a {
+    position: fixed;
+    top: 75px;
+    left: 18px;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 120%;
+    text-align: center;
+    z-index: 7;
+    text-decoration: none;
+}
+
+    #accButton a:visited {
+        text-decoration: none;
+    }
+
+    /*דלג לתוכן העמוד*/
+
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none
+    }
+
+    #skip a {
+        position: absolute;
+        top: 450px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            top: 50px;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border: 1px dotted #272727;
+            background-color: black;
+        }
+
+/*עיצוב תפריט פירורי לחם*/
+
+#breadCrumbs {
+    position: absolute;
+    top: 175px;
+    z-index: 4;
+}
+
+    #breadCrumbs ol li {
+        display: inline-block;
+        font-size: 14pt;
+    }
+
+        #breadCrumbs ol li a {
+            color: #272727;
+        }
+
+        #breadCrumbs ol li:after {
+            content: ">";
+        }
+
+        #breadCrumbs ol li:last-child:after {
+            content: "";
+        }
+
+        #breadCrumbs ol li:last-child {
+            color: #ea5746;
+            font-weight: bold;
+        }
+
+
+/*עיצוב תפריט אנכי*/
+
+#wrapperSideNav {
+    position: absolute;
+    top: 220px;
+    width: 230px;
+    z-index: 4;
+    height: 8120px;
+}
+
+#sideNav {
+    position: sticky;
+    width: 230px;
+    top: 90px;
+    right: 38px;
+    margin-right: 40px;
+    -webkit-box-shadow: 1px 4px 25px 1px rgba(0,0,0,0.30);
+    box-shadow: 1px 4px 25px 1px rgba(0,0,0,0.30);
+    z-index: 10;
+    overflow: hidden;
+}
+
+    #sideNav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #sideNav li a {
+        display: block;
+    }
+
+    #sideNav ul li #titleNav {
+        text-decoration: none;
+        font-size: 22pt;
+        color: #ea5746;
+        width: 210px;
+        height: 30px;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    #sideNav ul li a {
+        display: block;
+        background-color: white;
+        color: #272727;
+        width: 192px;
+        height: 30px;
+        text-decoration: none;
+        text-align: right;
+        padding-top: 22px;
+        padding-right: 38px;
+        font-size: 18pt;
+        z-index: 6;
+    }
+
+#whiteShoes {
+    padding-bottom: 10px;
+}
+
+/*במעבר עכבר הופך לאדום*/
+#sideNav ul li a:hover {
+    position: relative;
+    color: #ea5746;
+    font-weight: bold;
+}
+
+#clothesTop {
+    background-image: url('../images/clothesTop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1050px;
+    height: 250px;
+    position: absolute;
+    top: 50px;
+    right: 130px;
+    z-index: 0;
+}
+
+#clothingSpan {
+    position: absolute;
+    top: 190px;
+}
+
+h1 {
+    font-size: 40pt;
+    font-weight: normal;
+    position: absolute;
+    top: 260px;
+    right: 525px;
+}
+
+#foodStainsSpan {
+    position: absolute;
+    top: 288px;
+}
+
+#foodStains h2 {
+    font-size: 28pt;
+    font-weight: normal;
+    position: absolute;
+    top: 358px;
+    right: 330px;
+}
+
+#oilStainsSpan {
+    position: absolute;
+    top: 2330px;
+}
+
+#oilStains h2 {
+    font-size: 28pt;
+    font-weight: normal;
+    position: absolute;
+    top: 2400px;
+    right: 330px;
+}
+
+#colorStainsSpan {
+    position: absolute;
+    top: 4354px;
+}
+
+#colorStains h2 {
+    font-size: 28pt;
+    font-weight: normal;
+    position: absolute;
+    top: 4424px;
+    right: 330px;
+}
+
+#jeansSpan {
+    position: absolute;
+    top: 5690px;
+}
+
+#jeans h2 {
+    font-size: 28pt;
+    font-weight: normal;
+    position: absolute;
+    top: 5760px;
+    right: 330px;
+}
+
+#shoesSpan {
+    position: absolute;
+    top: 7385px;
+}
+
+#shoes h2 {
+    font-size: 28pt;
+    font-weight: normal;
+    position: absolute;
+    top: 7455px;
+    right: 330px;
+}
+
+
+
+/*תמונות לבנות*/
+#boxFood1 {
+    background-image: url('../images/boxFood1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 230px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxFood2 {
+    background-image: url('../images/boxFood2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 890px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxFood3 {
+    background-image: url('../images/boxFood3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 1550px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxOil1 {
+    background-image: url('../images/boxOil1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 2272px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxOil2 {
+    background-image: url('../images/boxOil2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 2870px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxOil3 {
+    background-image: url('../images/boxOil3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 3310px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxOil4 {
+    background-image: url('../images/boxOil4.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 270px;
+    top: 3750px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxColor1 {
+    background-image: url('../images/boxColor1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 260px;
+    top: 4355px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxColor2 {
+    background-image: url('../images/boxColor2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 260px;
+    top: 5000px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxJeans1 {
+    background-image: url('../images/boxJeans1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 260px;
+    top: 5690px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxJeans2 {
+    background-image: url('../images/boxJeans2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 260px;
+    top: 6300px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxJeans3 {
+    background-image: url('../images/boxJeans3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 260px;
+    top: 6790px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#boxShoes1 {
+    background-image: url('../images/boxShoes1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 260px;
+    top: 7390px;
+    width: 980px;
+    height: 810px;
+    z-index: 1;
+    background-size: cover;
+}
+
+/*הגדרות כלליות לאלמנטים בתוך הסקשנים*/
+#food1 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 440px;
+}
+
+#food2 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 1100px;
+}
+
+#food3 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 1760px;
+}
+
+#oil1 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 2465px;
+}
+
+#oil2 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 3070px;
+}
+
+#oil3 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 3510px;
+}
+
+#oil4 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 3952px;
+}
+
+#color1 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 4505px;
+}
+
+#color2 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 5150px;
+}
+
+#jeans1 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 5820px;
+}
+
+#jeans2 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 6450px;
+}
+
+#jeans3 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 6940px;
+}
+
+#shoes1 {
+    z-index: 2;
+    position: absolute;
+    right: 468px;
+    width: 580px;
+    top: 7538px;
+}
+
+
+
+
+/*תמונות*/
+
+.TVcolor {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: -35px;
+    right: 520px;
+    z-index: 4;
+}
+
+.images img {
+    position: absolute;
+}
+
+/*כל הדיבים שבתוך אימגס- מלל מצרכים*/
+.images div {
+    font-size: 14pt;
+    margin-top: 60px;
+    margin-right: 60px;
+    display: inline-block;
+}
+
+    /* מקום לרביעיית תמונות כתמי צבע*/
+    .images div .divColor {
+        margin-right: -15px;
+    }
+
+    /*מקום לרביעיית תמונות נעליים לבנות*/
+    .images div .divShoes {
+        margin-right: -45px;
+    }
+
+
+
+/*תמונות אייקונים*/
+#food1 .ketzef img {
+    width: 140px;
+    height: 210px;
+    top: 120px;
+    right: 87px;
+}
+
+#food1 .sfog img {
+    width: 140px;
+    height: 210px;
+    top: 130px;
+    right: 260px;
+}
+
+#food1 .water img {
+    width: 120px;
+    height: 190px;
+    top: 140px;
+    right: 460px;
+}
+
+#food2 .hometz img {
+    width: 95px;
+    height: 150px;
+    top: 150px;
+    right: 125px;
+}
+
+#food2 .salt img {
+    width: 95px;
+    height: 150px;
+    top: 160px;
+    right: 310px;
+}
+
+#food3 .milk img {
+    width: 130px;
+    height: 190px;
+    top: 168px;
+    right: 102px;
+}
+
+#oil1 .hometz img {
+    width: 95px;
+    height: 150px;
+    top: 160px;
+    right: 125px;
+}
+
+#oil1 .matlitLaha img {
+    width: 95px;
+    height: 150px;
+    top: 160px;
+    right: 348px;
+}
+
+#oil2 .salt img {
+    width: 95px;
+    height: 150px;
+    top: 60px;
+    right: 110px;
+}
+
+#oil2 .alcohol img {
+    width: 95px;
+    height: 150px;
+    top: 45px;
+    right: 390px;
+}
+
+#oil3 .soda img {
+    width: 120px;
+    height: 180px;
+    top: 45px;
+    right: 140px;
+}
+
+#oil3 .water img {
+    width: 120px;
+    height: 190px;
+    top: 35px;
+    right: 400px;
+}
+
+#oil4 .talk img {
+    width: 130px;
+    height: 200px;
+    top: 24px;
+    right: 72px;
+}
+
+#oil4 .nozelKvisa img {
+    width: 125px;
+    height: 200px;
+    top: 38px;
+    right: 250px;
+}
+
+#oil4 .neiyarSofeg img {
+    width: 120px;
+    height: 200px;
+    top: 38px;
+    right: 455px;
+}
+
+#color1 .sabonMo img {
+    width: 100px;
+    height: 170px;
+    top: 165px;
+    right: 28px;
+}
+
+#color1 .mivreshet img {
+    width: 120px;
+    height: 200px;
+    top: 148px;
+    right: 145px;
+}
+
+#color1 .soda img {
+    width: 120px;
+    height: 200px;
+    top: 148px;
+    right: 302px;
+}
+
+#color1 .water img {
+    width: 120px;
+    height: 200px;
+    top: 160px;
+    right: 480px;
+}
+
+#color2 .hometz img {
+    width: 95px;
+    height: 150px;
+    top: 150px;
+    right: 122px;
+}
+
+#jeans1 .makpie img {
+    width: 140px;
+    height: 220px;
+    top: 125px;
+    right: 79px;
+}
+
+#jeans1 .sakin img {
+    width: 85px;
+    height: 120px;
+    top: 180px;
+    right: 260px;
+}
+
+#jeans2 .hometz img {
+    width: 95px;
+    height: 150px;
+    top: 45px;
+    right: 110px;
+}
+
+#jeans2 .mivreshetShinaim img {
+    width: 140px;
+    height: 190px;
+    top: 50px;
+    right: 290px;
+}
+
+#jeans3 .ner img {
+    width: 120px;
+    height: 170px;
+    top: 50px;
+    right: 89px;
+}
+
+#jeans3 .neiarAfia img {
+    width: 130px;
+    height: 200px;
+    top: 48px;
+    right: 290px;
+}
+
+#jeans3 .megaatz img {
+    width: 140px;
+    height: 190px;
+    top: 60px;
+    right: 455px;
+}
+
+#shoes1 .soda img {
+    width: 120px;
+    height: 180px;
+    top: 48px;
+    right: 20px;
+}
+
+#shoes1 .water img {
+    width: 120px;
+    height: 200px;
+    top: 30px;
+    right: 160px;
+}
+
+#shoes1 .hamzan img {
+    width: 95px;
+    height: 150px;
+    top: 45px;
+    right: 310px;
+}
+
+#shoes1 .mivreshetShinaim img {
+    width: 140px;
+    height: 190px;
+    top: 50px;
+    right: 430px;
+}
+
+
+
+
+/*פלוסים*/
+.plus {
+    width: 40px;
+    height: 40px;
+}
+
+#plusA1 {
+    top: 210px;
+    right: 220px;
+}
+
+#plusA2 {
+    top: 210px;
+    right: 400px;
+}
+
+#plusC1 {
+    top: 210px;
+    right: 240px;
+}
+
+#plusO11 {
+    top: 220px;
+    right: 260px;
+}
+
+#plusO12 {
+    top: 120px;
+    right: 270px;
+}
+
+
+#plusO13 {
+    top: 110px;
+    right: 290px;
+}
+
+#plusO14 {
+    top: 110px;
+    right: 200px;
+}
+
+#plusO15 {
+    top: 110px;
+    right: 395px;
+}
+
+#plusO16 {
+    top: 235px;
+    right: 120px;
+}
+
+#plusO17 {
+    top: 235px;
+    right: 255px;
+}
+
+#plusO18 {
+    top: 235px;
+    right: 420px;
+}
+
+#plusJ1 {
+    top: 235px;
+    right: 210px;
+}
+
+#plusJ2 {
+    top: 130px;
+    right: 225px;
+}
+
+#plusJ3 {
+    top: 130px;
+    right: 225px;
+}
+
+#plusJ32 {
+    top: 130px;
+    right: 415px;
+}
+
+#plusS1 {
+    top: 110px;
+    right: 115px;
+}
+
+#plusS12 {
+    top: 110px;
+    right: 273px;
+}
+
+#plusS13 {
+    top: 110px;
+    right: 395px;
+}
+
+/*הגדרה כללית לכותרת רמה 3*/
+h3, .contentTitle {
+    font-size: 24pt;
+    font-weight: normal;
+}
+
+
+/*הגדרות כלליות לכותרות פנימיות*/
+.big {
+    font-size: 18pt;
+    font-weight: normal;
+    padding-top: 15px;
+}
+
+/*הגדרות כלליות לפסקאות פנימיות*/
+p {
+    font-size: 14pt;
+    line-height: 120%;
+    padding-top: 15px;
+}
+
+
+
+
+/*פוטר*/
+#footer {
+    background-image: url('../images/footerYellow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 8200px;
+    right: 0px;
+    z-index: 0;
+    background-size: cover;
+    width: 1280px;
+    height: 150px;
+}
+
+
+
+#footerNav {
+    position: absolute;
+    width: 1000px;
+    top: 8288px;
+    z-index: 5;
+    right: 140px;
+}
+
+/*העיצוב עצמו*/
+    #footerNav ul li a { 
+        display: block;
+        color: #272727;
+        width: 160px;
+        height: 40px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 21px;
+        margin-right: 80px;
+    }
+
+
+
+
+    /*מעבר עכבר מוסיף תמונה*/
+    #footerNav ul li:hover img {
+        display: inline-block;
+    }
+
+/*מיקומים של המסגרות*/
+#squareNav1 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 76px;
+    display: none;
+}
+
+#squareNav2 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 320px;
+    display: none;
+}
+
+#squareNav3 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 558px;
+    display: none;
+}
+
+#squareNav4 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 795px;
+    display: none;
+}
+
+
+
+

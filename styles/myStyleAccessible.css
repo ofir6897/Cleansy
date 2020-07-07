@@ -1,0 +1,1026 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+.colorAcc {
+    filter: invert(100%);
+}
+body {
+    direction: rtl;
+    color: #272727;
+    font-size: 19pt;
+    overflow-x: hidden;
+    font-family: 'Heebo', sans-serif;
+    background-color:black;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+  
+}
+
+#responsive {
+    position: relative;
+}
+
+.notActive {
+    cursor: not-allowed;
+
+}
+.default {
+    cursor: default;
+}
+
+
+/*תפריט ניווט*/
+/*לוגו בתוך התפריט*/
+#homeLogo {
+    width: 135px;
+    margin-top: -16px;
+    
+}
+
+#headerNav {
+    position: fixed;
+    width: 1280px;
+    top: 0px;
+    -webkit-box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.50);
+    box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.50);
+    z-index: 5;
+    
+}
+
+nav ul { /* שלב ראשון - העלמת תבליטים*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li a { /*שלב שני - תפריט אופקי וצמוד*/
+    display: inline-block;
+    float: right;
+}
+
+#headerNav ul li a { /*העיצוב עצמו*/
+    display: block;
+    background-color: white;
+    color: #272727;
+    width: 256px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19pt;
+}
+
+#headerNav ul li .secondNavStains {
+    text-align: right;
+    padding-right: 60px;
+    width: 196px;
+}
+
+#headerNav ul li .navStainsInner {
+    text-align: right;
+    padding-right: 10px;
+    width: 246px;
+}
+
+#headerNav ul li #navSI {
+    position: absolute;
+    top: 0px;
+    right: 256px;
+}
+
+#headerNav ul li .secondNavKitchen {
+    text-align: right;
+    padding-right: 96px;
+    width: 160px;
+}
+
+#headerNav ul li #kitchenNav {
+    position: absolute;
+    top: 62px;
+    right: 768px;
+}
+
+#headerNav ul li #navKI {
+    position: absolute;
+    top: 185px;
+    right: 245px;
+}
+
+#headerNav ul li .navKitchenInner {
+    text-align: right;
+    padding-right: 5px;
+    width: 246px;
+}
+
+
+#headerNav ul li .topNav {
+    display: block;
+    background-color: white;
+    color: #272727;
+    width: 256px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19pt;
+}
+
+/*מעבר עכבר מוסיף תמונה*/
+#headerNav ul li:hover img {
+    display: inline-block;
+}
+
+/*מיקומים קווים*/
+/*קו הסרת כתמים*/
+#lineNav1 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 298px;
+    display: none;
+}
+
+/*קו כביסה*/
+#lineNav2 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 558px;
+    display: none;
+}
+
+/*קו מטבח*/
+#lineNav3 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 816px;
+    display: none;
+}
+
+/*קו שירותקלחת*/
+#lineNav4 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 1070px;
+    display: none;
+}
+
+/*מעבר עכבר משנה צבע*/
+#headerNav ul li a:hover {
+    position: relative;
+    color: #ea5746;
+    font-weight: bold;
+}
+
+/*הגדרות של תת תפריט*/
+#headerNav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+
+#headerNav ul li:hover ul {
+    display: block;
+    right: 256px;
+    height: -20px;
+    top: 62px;
+    -webkit-box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+    box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+}
+
+
+    /*הגדרות של תת תפריט משני*/
+
+    #headerNav ul li:hover ul li ul { /*תת תפריט לא יופיע ומיקומו יהיה קבוע*/
+        display: none;
+        position: absolute;
+    }
+
+    #headerNav ul li:hover ul li:hover ul {
+        display: block;
+        right: 256px;
+        height: -20px;
+        top: 60px;
+        -webkit-box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+        box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+    }
+
+
+#kitchenNav {
+    right: 768px;
+    top: 60px;
+}
+
+/*כפתור נגישות*/
+
+#accButton .blueSquareFull {
+    position: fixed;
+    top: 70px;
+    left: -10px;
+    width: 150px;
+    height: 55px;
+    z-index: 6;
+}
+
+
+#accButton a {
+    position: fixed;
+    top: 75px;
+    left: 18px;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 120%;
+    text-align: center;
+    z-index: 7;
+    text-decoration: none;
+}
+
+    #accButton a:visited {
+        text-decoration: none;
+    }
+
+    /*דלג לתוכן העמוד*/
+
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none
+    }
+
+    #skip a {
+        position: absolute;
+        top: 30px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            top: 50px;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border: 1px dotted #272727;
+            background-color: black;
+        }
+h1 {
+    font-size: 56pt;
+    text-align: center;
+    padding-top: 140px;
+    line-height: 20%; /*מרווח בין השורות*/
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 28pt;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 50px;
+    line-height: 130%; /*מרווח בין השורות*/
+}
+
+
+
+
+
+
+
+/*צהוב*/
+#yellowSquare {
+    background-image: url('../images/YellowSquare.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 440px;
+    width: 1280px;
+    height: 870px;
+    z-index: 1;
+    background-size: cover;
+}
+
+/*ריבוע לבן*/
+#whiteSquare {
+    background-image: url('../images/WhiteSquare.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 140px;
+    top: 285px;
+    width: 1000px;
+    height: 955px;
+    z-index: 3;
+    background-size: cover;
+}
+
+/*כתב*/
+
+.front {
+    z-index: 4;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #272727;
+}
+
+    a:hover span {
+        color: #ff5a44;
+    }
+
+/*פרטי לבוש*/
+#stainRemoval a img { /*הגדרות לתמונה*/
+    display: inline-block;
+    width: 230px;
+    position: absolute;
+    right: 280px;
+    top: 60px;
+}
+
+#stainRemoval a p { /*הגדרות לטקסט*/
+    position: absolute;
+    right: 530px;
+    top: 155px;
+    line-height: 150%;
+}
+
+/*מעבר עכבר פרטי לבוש*/
+/*במעבר עכבר להעלים את תמונה 1*/
+#stainRemoval a:hover #ShirtIcon1 {
+    display: none;
+}
+
+#ShirtIcon2 {
+    opacity: 0;
+}
+
+/*במעבר עכבר להראות את תמונה 2*/
+#stainRemoval a:hover #ShirtIcon2 {
+    width: 228px;
+    position: absolute;
+    right: 287px;
+    top: 65px;
+    display: inline-block;
+    opacity: 100;
+}
+
+#stainRemoval a:hover #line1 {
+    display: none;
+}
+
+#line1 {
+    opacity: 0;
+}
+
+#stainRemoval a:hover #line1 {
+    width: 183px;
+    position: absolute;
+    right: 530px;
+    top: 225px;
+    display: inline-block;
+    opacity: 100;
+}
+
+#laundry a img {
+    display: inline-block;
+    width: 230px;
+    position: absolute;
+    left: 320px;
+    top: 305px;
+}
+
+#laundry a p {
+    position: absolute;
+    left: 610px;
+    top: 395px;
+    line-height: 150%;
+}
+
+/*מעבר עכבר כביסה לבנה*/
+/*במעבר עכבר להעלים את תמונה 1*/
+#laundry a:hover #laundryIcon1 {
+    display: none;
+}
+
+#laundryIcon2 {
+    opacity: 0;
+}
+
+/*במעבר עכבר להראות את תמונה 2*/
+#laundry a:hover #laundryIcon2 {
+    width: 208px;
+    position: absolute;
+    left: 345px;
+    top: 303px;
+    display: inline-block;
+    opacity: 100;
+}
+
+/*מעבר עכבר קן- איך מנקים*/
+#laundry a:hover #line2 {
+    display: none;
+}
+
+#line2 {
+    opacity: 0;
+}
+
+#laundry a:hover #line2 {
+    width: 183px;
+    position: absolute;
+    right: 360px;
+    top: 462px;
+    display: inline-block;
+    opacity: 100;
+}
+
+
+
+#pot a img {
+    display: inline-block;
+    width: 270px;
+    position: absolute;
+    right: 260px;
+    top: 520px;
+}
+
+#pot a p {
+    position: absolute;
+    right: 530px;
+    top: 660px;
+    line-height: 150%;
+}
+
+
+/*מעבר עכבר אקססוריז*/
+/*במעבר עכבר להעלים את תמונה 1*/
+#pot a:hover #pot1 {
+    display: none;
+}
+
+#pot2 {
+    opacity: 0;
+}
+
+/*במעבר עכבר להראות את תמונה 2*/
+#pot a:hover #pot2 {
+    width: 250px;
+    position: absolute;
+    right: 265px;
+    top: 535px;
+    display: inline-block;
+    opacity: 100;
+}
+
+/*מעבר עכבר- קו איך מסירים*/
+#pot a:hover #line3 {
+    display: none;
+}
+
+#line3 {
+    opacity: 0;
+}
+
+#pot a:hover #line3 {
+    width: 183px;
+    position: absolute;
+    right: 530px;
+    top: 728px;
+    display: inline-block;
+    opacity: 100;
+}
+
+
+/*מה תרצו לנקות?*/
+#cleanWhat {
+    position: absolute;
+    top: 920px;
+    right: 520px;
+}
+
+#V {
+    background-image: url('../images/V.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 960px;
+    right: 565px;
+    z-index: 5;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/*עיגול הסרת כתמים*/
+#circleStainimg {
+    position: absolute;
+    left: 933px;
+    top: 1080px;
+    width: 250px;
+    height: 250px;
+    z-index: 4;
+}
+
+
+/*טקסט הסרת כתמים*/
+#S_txt1 {
+    position: absolute;
+    left: 989px;
+    top: 1250px;
+    z-index: 9;
+}
+
+
+#S_txt2 {
+    z-index: 0;
+    position: absolute;
+    left: 1000px;
+    top: 1130px;
+    color: white;
+}
+
+#S_txt3 {
+    z-index: 0;
+    position: absolute;
+    left: 980px;
+    top: 1165px;
+    color: white;
+}
+
+#S_txt4 {
+    z-index: 0;
+    position: absolute;
+    left: 1010px;
+    top: 1200px;
+    color: white;
+}
+
+/*מעבר עכבר על העיגול*/
+#circleStain:hover #S_txt1 {
+    color: white;
+    font-weight: bold;
+}
+
+#circleStain:hover #S_txt2, #circleStain:hover #S_txt3, #circleStain:hover #S_txt4 {
+    color: white;
+    z-index: 5;
+}
+
+#circleStain #S_txt2:hover, #circleStain #S_txt3:hover, #circleStain #S_txt4:hover {
+    font-weight: bold;
+}
+
+#fullCircleStain {
+    position: absolute;
+    left: 917px;
+    top: 1064px;
+    width: 280px;
+    height: 280px;
+    z-index: 5;
+    opacity: 0;
+}
+
+#circleStain:hover #circleStainimg {
+    opacity: 0;
+}
+
+#circleStain:hover #fullCircleStain {
+    opacity: 100;
+}
+
+
+
+
+/*כביסה*/
+#circleLaundryimg {
+    position: absolute;
+    left: 655px;
+    top: 1080px;
+    width: 250px;
+    height: 250px;
+    z-index: 4;
+}
+
+/*טקסט כביסה*/
+#L_txt1 {
+    position: absolute;
+    right: 465px;
+    top: 1250px;
+    z-index: 9;
+    color: black;
+}
+
+
+#L_txt2 {
+    z-index: 0;
+    position: absolute;
+    right: 440px;
+    top: 1130px;
+    color: white;
+}
+
+#L_txt3 {
+    z-index: 0;
+    position: absolute;
+    right: 485px;
+    top: 1165px;
+    color: white;
+}
+
+#L_txt4 {
+    z-index: 0;
+    position: absolute;
+    right: 440px;
+    top: 1200px;
+    color: white;
+}
+
+
+
+/*מעבר עכבר על העיגול*/
+#circleLaundry:hover #L_txt1 {
+    color: white;
+    font-weight: bold;
+}
+
+#circleLaundry:hover #L_txt2, #circleLaundry:hover #L_txt3, #circleLaundry:hover #L_txt4 {
+    color: white;
+    z-index: 5;
+}
+
+#circleLaundry #L_txt2:hover, #circleLaundry #L_txt3:hover, #circleLaundry #L_txt4:hover {
+    font-weight: bold;
+}
+
+#fullCircleLaundry {
+    position: absolute;
+    left: 638px;
+    top: 1064px;
+    width: 280px;
+    height: 280px;
+    z-index: 5;
+    opacity: 0;
+}
+
+#circleLaundry:hover #circleWCimg {
+    opacity: 0;
+}
+
+#circleLaundry:hover #fullCircleLaundry {
+    opacity: 100;
+}
+
+
+
+
+
+
+/*מטבח*/
+#circleKitchenimg {
+    position: absolute;
+    right: 655px;
+    top: 1080px;
+    width: 250px;
+    height: 250px;
+    z-index: 4;
+}
+
+/*טקסט מטבח*/
+#K_txt1 {
+    position: absolute;
+    left: 472px;
+    top: 1250px;
+    z-index: 9;
+    color: black;
+}
+
+
+#K_txt2 {
+    z-index: 0;
+    position: absolute;
+    left: 473px;
+    top: 1115px;
+    color: white;
+}
+
+#K_txt3 {
+    z-index: 0;
+    position: absolute;
+    left: 469px;
+    top: 1147px;
+    color: white;
+}
+
+#K_txt4 {
+    z-index: 0;
+    position: absolute;
+    left: 479px;
+    top: 1178px;
+    color: white;
+}
+
+#K_txt5 {
+    z-index: 0;
+    position: absolute;
+    left: 452px;
+    top: 1210px;
+    color: white;
+}
+
+
+/*מעבר עכבר על העיגול*/
+#circleKitchen:hover #K_txt1 {
+    color: white;
+    font-weight: bold;
+}
+
+#circleKitchen:hover #K_txt2, #circleKitchen:hover #K_txt3, #circleKitchen:hover #K_txt4, #circleKitchen:hover #K_txt5 {
+    color: white;
+    z-index: 5;
+}
+
+#circleKitchen #K_txt2:hover, #circleKitchen #K_txt3:hover, #circleKitchen #K_txt4:hover, #circleKitchen #K_txt5:hover {
+    font-weight: bold;
+}
+
+#fullCircleKitchen {
+    position: absolute;
+    right: 638px;
+    top: 1064px;
+    width: 280px;
+    height: 280px;
+    z-index: 5;
+    opacity: 0;
+}
+
+#circleKitchen:hover #circleKitchenimg {
+    opacity: 0;
+}
+
+#circleKitchen:hover #fullCircleKitchen {
+    opacity: 100;
+}
+
+
+
+
+
+
+/*עיגול שירותקלחת*/
+#circleWCimg {
+    position: absolute;
+    right: 933px;
+    top: 1080px;
+    width: 250px;
+    height: 250px;
+    z-index: 4;
+}
+
+/*טקסט שירותקלחת*/
+#WC_txt1 {
+    position: absolute;
+    left: 162px;
+    top: 1250px;
+    z-index: 9;
+    color: black;
+}
+
+
+#WC_txt2 {
+    z-index: 0;
+    position: absolute;
+    left: 202px;
+    top: 1115px;
+    color: white;
+}
+
+#WC_txt3 {
+    z-index: 0;
+    position: absolute;
+    left: 187px;
+    top: 1145px;
+    color: white;
+}
+
+#WC_txt4 {
+    z-index: 0;
+    position: absolute;
+    left: 194px;
+    top: 1178px;
+    color: white;
+}
+
+#WC_txt5 {
+    z-index: 0;
+    position: absolute;
+    left: 191px;
+    top: 1210px;
+    color: white;
+}
+
+
+/*מעבר עכבר על העיגול*/
+#circleWC:hover #WC_txt1 {
+    color: white;
+    font-weight: bold;
+}
+
+#circleWC:hover #WC_txt2, #circleWC:hover #WC_txt3, #circleWC:hover #WC_txt4, #circleWC:hover #WC_txt5 {
+    color: white;
+    z-index: 5;
+}
+
+#circleWC #WC_txt2:hover, #circleWC #WC_txt3:hover, #circleWC #WC_txt4:hover, #circleWC #WC_txt5:hover {
+    font-weight: bold;
+}
+
+#fullWC {
+    position: absolute;
+    right: 917px;
+    top: 1064px;
+    width: 280px;
+    height: 280px;
+    z-index: 5;
+    opacity: 0;
+}
+
+#circleWC:hover #circleWCimg {
+    opacity: 0;
+}
+
+#circleWC:hover #fullWC {
+    opacity: 100;
+}
+
+/*שליחת טיפים*/
+#tips p {
+    position: absolute;
+    top: 1445px;
+    right: 230px;
+}
+
+#tips a {
+    position: absolute;
+    top: 1445px;
+    right: 570px;
+    z-index: 5;
+}
+
+#redSquare {
+    position: absolute;
+    top: 1425px;
+    right: 555px;
+    width: 200px;
+}
+
+#redSquareFull {
+    position: absolute;
+    top: 1425px;
+    right: 555px;
+    width: 200px;
+    opacity: 0;
+}
+
+
+
+#tips div #redSquare:hover {
+    opacity: 0;
+}
+
+#tips div:hover #redSquareFull {
+    opacity: 100;
+}
+
+#tips div:hover a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/*פוטר*/
+#footer {
+    background-image: url('../images/footerYellow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1555px;
+    right: 0px;
+    z-index: 0;
+    background-size: cover;
+    width: 1280px;
+    height: 150px;
+}
+
+
+
+#footerNav {
+    position: absolute;
+    width: 1000px;
+    top: 1645px;
+    z-index: 1;
+    right: 140px;
+}
+
+
+    #footerNav ul li a { /*העיצוב עצמו*/
+        display: block;
+        color: #272727;
+        width: 160px;
+        height: 40px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 21px;
+        margin-right: 80px;
+    }
+
+    /*מעבר עכבר מוסיף תמונה*/
+    #footerNav ul li:hover img {
+        display: inline-block;
+    }
+
+/*מיקומים קווים*/
+/*קו הסרת כתמים*/
+#squareNav1 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 76px;
+    display: none;
+}
+
+#squareNav2 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 320px;
+    display: none;
+}
+
+#squareNav3 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 558px;
+    display: none;
+}
+
+#squareNav4 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 12px;
+    right: 795px;
+    display: none;
+}
+
+
+
+
+/*שביל ישראל*/
+#kav1 {
+    background-image: url('../images/Kav1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 230px;
+    width: 300px;
+    height: 470px;
+    left: 0px;
+    z-index: 1;
+    background-size: cover;
+}
+
+#kav2 {
+    background-image: url('../images/Kav2.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1150px;
+    width: 1100px;
+    height: 800px;
+    right: 0px;
+    z-index: 0;
+    background-size: cover;
+}

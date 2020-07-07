@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title> Cleansy - פרטי לבוש</title>
+    <meta name="description" content="אתר המכיל טיפים מהירים ופשוטים לנקיון הבית ולפרטי לבוש" />
+    <meta name="keywords" content="נקיון, טיפים, מדריכים, הסרת כתמים, כביסה, מקלחת, מטבח, שירותים,כתמים,איך מנקים, איך מסירים, טריקים, כתם יין, כתם שמן, כתם קפה, כתם עמבה, כתם צבע, הורדת מסטיק מהג'ינס, שמירה על נעליים לבנות ,  " />
+    <meta name="author" content="אופיר, ספיר, חלי ,יובל" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/clothing.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="images/C logo.png" />
+
+</head>
+<body>
+    <div id="container">
+        <article id="responsive">
+            <div role="main">
+                <header>
+                    <ul id="skip">
+                        <li><a href="#clothingSpan">דלג לתוכן העמוד</a></li>
+                    </ul>
+                    <nav id="headerNav" aria-label="תפריט ניווט ראשי">
+                        <ul>
+                            <li><a href="index.html"><img id="homeLogo" src="images/cleansy logo text.png" alt="קלינזי - טיפים לניקיון הבית" title="Cleansy - טיפים לניקיון הבית" /></a></li>
+                            <li id="kav">
+                                <div>
+                                    <a href="#" class="navLine default">הסרת כתמים</a>
+                                    <img id="lineNav1" src="images/Line.png" alt="" />
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="clothing.html" class="secondNavStains">פרטי לבוש</a>
+                                        <ul id="navSI">
+                                            <li><a href="clothing.html#foodStainsSpan" class="navStainsInner">כתמי אוכל</a></li>
+                                            <li><a href="clothing.html#oilStainsSpan" class="navStainsInner">כתמי שמן</a></li>
+                                            <li><a href="clothing.html#colorStainsSpan" class="navStainsInner">כתמי צבע</a></li>
+                                            <li><a href="clothing.html#jeansSpan" class="navStainsInner">מסטיק מהג'ינס</a></li>
+                                            <li><a href="clothing.html#shoesSpan" class="navStainsInner">נעליים לבנות</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="secondNavStains notActive">ספות ושטיחים</a></li>
+                                    <li><a href="#" class="secondNavStains notActive">רהיטי עץ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="notActive navLine default" href="#">כביסה</a>
+                                    <img id="lineNav2" src="images/Line.png" alt="" />
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="navLine">מטבח</a>
+                                    <img id="lineNav3" src="images/Line.png" alt="" />
+                                </div>
+                                <ul id="kitchenNav">
+                                    <li><a href="#" class="secondNavKitchen notActive">מקרר</a></li>
+                                    <li><a href="#" class="secondNavKitchen notActive">כיריים</a></li>
+                                    <li><a href="#" class="secondNavKitchen notActive">תנור</a></li>
+                                    <li>
+                                        <a class="secondNavKitchen" href="accessories.html">אקססוריז</a>
+                                        <ul id="navKI">
+                                            <li><a href="accessories.html#removalAvnitSpan" class="navKitchenInner">הסרת אבנית מקומקום</a></li>
+                                            <li><a href="accessories.html#cleaningKufsaSpan" class="navKitchenInner">ניקוי קופסאות אוכל</a></li>
+                                            <li><a href="accessories.html#cleaningKereshSpan" class="navKitchenInner">ניקוי קרש חיתוך</a></li>
+                                            <li><a href="accessories.html#cleaningSirSpan" class="navKitchenInner">ניקוי סירים ומחבתות</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="notActive navLine" href="#">שירותקלחת</a>
+                                    <img id="lineNav4" src="images/Line.png" alt="" />
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!--תפריט פירורי לחם-->
+                    <nav id="breadCrumbs" aria-label="תפריט התמצאות">
+                        <ol>
+                            <li><a href="index.html">דף הבית</a></li>
+                            <li>הסרת כתמים</li>
+                            <li>פרטי לבוש</li>
+                        </ol>
+                    </nav>
+
+                    <!--תפריט אנכי-->
+                    <div id="wrapperSideNav">
+                        <nav id="sideNav" aria-label="תפריט ניווט משני">
+                            <ul>
+                                <li><a id="titleNav" href="#clothingSpan">פרטי לבוש</a></li>
+                                <li><a href="#foodStainsSpan">כתמי אוכל</a></li>
+                                <li><a href="#oilStainsSpan">כתמי שמן</a></li>
+                                <li><a href="#colorStainsSpan">כתמי צבע</a></li>
+                                <li><a href="#jeansSpan">מסטיק בג'ינס</a></li>
+                                <li><a id="whiteShoes" href="#shoesSpan">נעליים לבנות</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <!--כפתור נגישות-->
+                    <div id="accButton">
+                        <a href="clothingAccessible.html">
+
+                            כפתור נגישות <br />
+                            צבעים מנוגדים
+
+                        </a>
+                        <img class="redSquareFull" src="images/redSquareFull.png" alt="" />
+                    </div>
+                
+                <!--תמונות רקע-->
+                <div>
+                    <div id="clothesTop"></div>
+                    <div id="ketemBlue1"></div>
+                    <div id="ketemPink1"></div>
+                    <div id="ketemYellow1"></div>
+                    <div id="ketemYellow2"></div>
+                    <div id="ketemCoffee"></div>
+                    <div id="ketemWine1"></div>
+                    <div id="ketemWine2"></div>
+                    <div id="ketemYellow3"></div>
+                    <div id="ketemPink2"></div>
+                    <div id="ketemBlue2"></div>
+                    <div id="ketemYellow4"></div>
+                    <div id="ketemPink3"></div>
+                    <div id="ketemBlue3"></div>
+                    <div id="ketemYellow5"></div>
+                    <div id="ketemPink4"></div>
+                    <div id="ketemBlue4"></div>
+                    <div id="ketemYellow6"></div>
+                    <div id="ketemPink5"></div>
+                    <div id="ketemBlue5"></div>
+                </div>
+                <div>
+                    <!--כותרת עמוד-->
+                    <span id="clothingSpan"></span>
+                    <h1>פרטי לבוש</h1>
+                    <!--קטגוריה ראשונה- כתמי אוכל-->
+                    <section id="foodStains">
+                        <span id="foodStainsSpan"></span>
+                        <h2>כתמי אוכל</h2>
+                        <div id="boxFood1"></div>
+                        <section id="food1">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>כתמי עמבה ושלל ממרחים בעיתיים</h3>
+                            <p class="big">מה זה עמבה? עמבה זה כתם</p>
+                            <p>"יש לי פגישה עוד שעה, ואני תקוע עם כתם של עמבה מהסביח של הצהריים. אין מצב שאני מגיע ככה"</p>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="ketzef">
+                                    <img src="images/ketzef.png" alt="קצף גילוח" />
+                                    <div>קצף גילוח</div>
+                                </div>
+                                <img class="plus" id="plusA1" src="images/plus.png" alt="פלוס" />
+                                <div class="sfog">
+                                    <img src="images/sfog.png" alt="ספוג" />
+                                    <div>ספוג</div>
+                                </div>
+                                <img class="plus" id="plusA2" src="images/plus.png" alt="פלוס" />
+                                <div class="water">
+                                    <img src="images/water.png" alt="ברז מים" />
+                                    <div>ברז מים</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מרססים קצף גילוח על הכתם וממתינים מספר דקות. <br />
+                                משפשפים בעזרת ספוג רך מתחת לזרם מים פושרים.
+                            </p>
+                            <h4 class="big">תזכורת לפעם הבאה:</h4>
+                            <p>להסתובב תמיד עם קצף גילוח!</p>
+                        </section>
+
+                        <div id="boxFood2"></div>
+                        <section id="food2">
+                            <a href="videoCoffee.html">
+                                <img class="TVcolor" src="images/TVColor.png" alt="מעבר לקישור סרטון כתם קפה שחור" />
+                            </a>
+                            <h3>כתם קפה שחור חזק</h3>
+                            <p class="big">לקפה שלי יש חיים משלו</p>
+                            <p>
+                                "קמתי בבוקר, התחלתי להתארגן, וכמובן שהקפה החליט שהוא נשפך דווקא על
+                                החולצה שרציתי ללבוש"
+                            </p>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="hometz">
+                                    <img src="images/hometz.png" alt="חומץ לבן" />
+                                    <div>כוס חומץ לבן</div>
+                                </div>
+                                <img class="plus" id="plusC1" src="images/plus.png" alt="פלוס" />
+                                <div class="salt">
+                                    <img src="images/salt.png" alt="מלח" />
+                                    <div>מלח</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מערבבים את החומרים לתערובת אחידה ומורחים על הכתם. <br />
+                                משאירים את הבגד לייבוש למשך חצי שעה ומכניסים למכונת הכביסה.
+                            </p>
+                            <h4 class="big">תזכורת לפעם הבאה:</h4>
+                            <p>שום קפה לא יהרוס לי את היום!</p>
+                        </section>
+
+                        <div id="boxFood3"></div>
+                        <section id="food3">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>כתם יין אדום</h3>
+                            <p class="big">למה לא הזמנתי יין לבן?</p>
+                            <p>
+                                "אני במסעדה והמלצר שפך על החולצה שלי יין אדום!"
+                                <br />
+                                מעולה, עכשיו תבקשו ממנו לשפוך גם יין לבן,
+                                שפשפו תחת מים והכתם ירד.
+                                <br />
+                                אין יין לבן?
+                            </p>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="milk">
+                                    <img src="images/milk.png" alt="חלב" />
+                                    <div>כוס חלב חם</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                משרים את הכתם בחלב חם למשך שעתיים, ומכניסים למכונת הכביסה.
+                            </p>
+                            <h4 class="big">תזכורת לפעם הבאה:</h4>
+                            <p>תזמינו בירה!</p>
+                        </section>
+                    </section>
+
+                    <!--קטגוריה שנייה- כתמי שמן-->
+                    <section id="oilStains">
+                        <span id="oilStainsSpan"></span>
+                        <h2>כתמי שמן</h2>
+                        <div id="boxOil1"></div>
+                        <section id="oil1">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <p class="contentTitle">
+                                "לא מאמין שזה קרה, הסיוט התממש <br />
+                                הנה זה הגיע- כתם שמן עיקש"
+                            </p> <br />
+                            <h3>לעצלנים ממש</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="hometz">
+                                    <img src="images/hometz.png" alt="חומץ לבן" />
+                                    <div>כוס חומץ לבן</div>
+                                </div>
+                                <img class="plus" id="plusO11" src="images/plus.png" alt="פלוס" />
+                                <div class="matlitLaha">
+                                    <img src="images/matlitLaha.png" alt="מטלית לחה" />
+                                    <div>מטלית לחה</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                משפשפים את כתם השמן בעדינות עם מטלית לחה ומעט חומץ.<br />
+                                חוזרים על הפעולה מספר פעמים עד להעלמת הכתם.
+                            </p>
+                        </section>
+
+                        <div id="boxOil2"></div>
+                        <section id="oil2">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>לעצלנים</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="salt">
+                                    <img src="images/salt.png" alt="מלח" />
+                                    <div>1/4 כוס מלח</div>
+                                </div>
+                                <img class="plus" id="plusO12" src="images/plus.png" alt="פלוס" />
+                                <div class="alcohol">
+                                    <img src="images/Alcohol.png" alt="אלכוהול לחיטוי" />
+                                    <div>3/4 כוס אלכוהול לחיטוי</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מערבבים את החומרים ליצירת תמיסה ומורחים על כתם השמן.<br />
+                                משרים למשך כחצי שעה ומכניסים למכונת הכביסה.
+                            </p>
+                        </section>
+
+                        <div id="boxOil3"></div>
+                        <section id="oil3">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>למשקיענים</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="soda">
+                                    <img src="images/soda.png" alt="סודה לשתייה" />
+                                    <div>2 כפות סודה לשתייה</div>
+                                </div>
+                                <img class="plus" id="plusO13" src="images/plus.png" alt="פלוס" />
+                                <div class="water">
+                                    <img src="images/water.png" alt="מים פושרים" />
+                                    <div>מים פושרים</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מערבבים אבקת סודה לשתייה ומוסיפים מעט מים בהדרגה, עד לקבלת משחה סמיכה.
+                                מורחים על הכתם, מייבשים ומכניסים למכונת הכביסה.
+                            </p>
+                        </section>
+
+                        <div id="boxOil4"></div>
+                        <section id="oil4">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>למשקיענים ממש</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="talk">
+                                    <img src="images/talk.png" alt="טלק" />
+                                    <div>טלק</div>
+                                </div>
+                                <img class="plus" id="plusO14" src="images/plus.png" alt="פלוס" />
+                                <div class="nozelKvisa">
+                                    <img src="images/nozelKvisa.png" alt="נוזל כביסה" />
+                                    <div>נוזל כביסה</div>
+                                </div>
+                                <img class="plus" id="plusO15" src="images/plus.png" alt="פלוס" />
+                                <div class="neiyarSofeg">
+                                    <img src="images/neiyarSofeg.png" alt="נייר סופג" />
+                                    <div>נייר סופג</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                סופגים את כתם השמן עם נייר סופג משני צידי הבגד. <br />
+                                מפזרים טלק מעל הכתם וממתינים כרבע שעה. <br />
+                                סופגים את הטלק עם הנייר, משפשפים בעדינות עם נוזל הכביסה ומכניסים למכונה.
+                            </p>
+                        </section>
+                    </section>
+
+                    <!--קטגוריה שלישית- כתמי צבע-->
+                    <section id="colorStains">
+                        <span id="colorStainsSpan"></span>
+                        <h2>כתמי צבע</h2>
+                        <div id="boxColor1"></div>
+                        <section id="color1">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>כתמי צבעי גואש מהפעילות עם הילדים</h3>
+                            <p class="big">מזל שגואש יורד במים וסבון</p>
+                            <p>
+                                "החלטתי לאזור אומץ ולתת לילדים להשתעשע עם גואש. כמובן שהיה יותר צבע
+                                על הבגדים שלהם, מאשר על הדף"
+                            </p>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="sabonMo">
+                                    <img src="images/sabonMo.png" alt="סבון מוצק" />
+                                    <div class="divColor">סבון מוצק</div>
+                                </div>
+                                <img class="plus" id="plusO16" src="images/plus.png" alt="פלוס" />
+                                <div class="mivreshet">
+                                    <img src="images/mivreshet.png" alt="מברשת" />
+                                    <div class="divColor">מברשת</div>
+                                </div>
+                                <img class="plus" id="plusO17" src="images/plus.png" alt="פלוס" />
+                                <div class="soda">
+                                    <img src="images/soda.png" alt="סודה לשתייה" />
+                                    <div class="divColor">1/4 כוס סודה לשתייה</div>
+                                </div>
+                                <img class="plus" id="plusO18" src="images/plus.png" alt="פלוס" />
+                                <div class="water">
+                                    <img src="images/water.png" alt="ברז מים" />
+                                    <div class="divColor">ברז מים</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מניחים את הבגד מתחת למים זורמים, משפשפים עם מברשת וסבון מוצק. <br />
+                                מכניסים למכונת הכביסה יחד עם סודה לשתייה.
+                            </p>
+                            <h4 class="big">תזכורת לפעם הבאה:</h4>
+                            <p>למצוא פעילות אחרת!</p>
+                        </section>
+
+                        <div id="boxColor2"></div>
+                        <section id="color2">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>כתם צבע קיר (צבע אקריל)</h3>
+                            <p class="big">כל צבע צריך גם מדלל צבע</p>
+                            <p>
+                                "פעם באף פעם אנחנו מחליטים לצבוע את הבית. בנוסף לזה שכל הבית
+                                מלוכלך ומבולגן, גם כל הבגדים שלנו נהרסים"
+                            </p>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="hometz">
+                                    <img src="images/hometz.png" alt="חומץ לבן" />
+                                    <div>כוס חומץ לבן</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                שופכים טינר על גבי הכתם, משפשפים ושוטפים.
+                            </p>
+                            <h4 class="big">תזכורת לפעם הבאה:</h4>
+                            <p>להזמין צבעי!!</p>
+                        </section>
+                    </section>
+
+                    <!--קטגוריה רביעית- כתמי צבע-->
+                    <section id="jeans">
+                        <span id="jeansSpan"></span>
+                        <h2>מסטיק בג'ינס</h2>
+                        <div id="boxJeans1"></div>
+                        <section id="jeans1">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <p class="contentTitle">נתקע לכם מסטיק בג'ינס? מעולה,<br /> זרקו אותו לפח! בעצם.. שנייה לפני שזורקים..</p> <br />
+                            <h3>לעצלנים</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="makpie">
+                                    <img src="images/makpie.png" alt="מקפיא" />
+                                    <div>מקפיא</div>
+                                </div>
+                                <img class="plus" id="plusJ1" src="images/plus.png" alt="פלוס" />
+                                <div class="sakin">
+                                    <img src="images/sakin.png" alt="סכין" />
+                                    <div>סכין</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מקפיאים את הג'ינס למשך 2-3 שעות במקפיא. <br />
+                                לאחר ההקפאה, מסירים את המסטיק בזהירות באמצעות הסכין.
+                            </p>
+                        </section>
+
+                        <div id="boxJeans2"></div>
+                        <section id="jeans2">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>למשקיענים</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="hometz">
+                                    <img src="images/hometz.png" alt="חומץ לבן" />
+                                    <div>כוס חומץ </div>
+                                </div>
+                                <img class="plus" id="plusJ2" src="images/plus.png" alt="פלוס" />
+                                <div class="mivreshetShinaim">
+                                    <img src="images/mivreshetShinaim.png" alt="מברשת שיניים" />
+                                    <div>מברשת שיניים </div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מחממים חומץ כמעט עד לרתיחה ומוזגים על המסטיק. <br />
+                                משפשפים בעדינות בעזרת מברשת השיניים, ומכניסים למכונת הכביסה.
+                            </p>
+                        </section>
+
+                        <div id="boxJeans3"></div>
+                        <section id="jeans3">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>למשקיענים ממש</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="ner">
+                                    <img src="images/ner.png" alt="נר" />
+                                    <div>נר שעווה </div>
+                                </div>
+                                <img class="plus" id="plusJ3" src="images/plus.png" alt="פלוס" />
+                                <div class="neiarAfia">
+                                    <img src="images/neiarAfia.png" alt="נייר אפייה" />
+                                    <div>נייר אפייה </div>
+                                </div>
+                                <img class="plus" id="plusJ32" src="images/plus.png" alt="פלוס" />
+                                <div class="megaatz">
+                                    <img src="images/megaatz.png" alt="מגהץ" />
+                                    <div>מגהץ </div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מסירים את המסטיק מהג'ינס עד כמה שניתן בלי למרוח אותו. <br />
+                                לוקחים נר שעווה ומטפטפים את השעווה על שאריות המסטיק שנותרו. <br />
+                                לאחר ייבוש מניחים נייר אפייה מעל השעווה ומגהצים. <br />
+                                כתם המסטיק ייספג בקלות על הנייר.
+                            </p>
+                        </section>
+                    </section>
+
+                    <!--קטגוריה חמישית- נעלייםלבנות-->
+                    <section id="shoes">
+                        <span id="shoesSpan"></span>
+                        <h2>נעליים לבנות</h2>
+                        <div id="boxShoes1"></div>
+                        <section id="shoes1">
+                            <a href="#">
+                                <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                            </a>
+                            <h3>הנעליים של השכן לבנות יותר?</h3>
+                            <h4 class="big">מה צריך?</h4>
+                            <div class="images">
+                                <div class="soda">
+                                    <img src="images/soda.png" alt="אבקת סודה לשתייה" />
+                                    <div class="divShoes">כף סודה לשתייה</div>
+                                </div>
+                                <img class="plus" id="plusS1" src="images/plus.png" alt="פלוס" />
+                                <div class="water">
+                                    <img src="images/water.png" alt="מים" />
+                                    <div class="divShoes">1/2 כפית מים</div>
+                                </div>
+                                <img class="plus" id="plusS12" src="images/plus.png" alt="פלוס" />
+                                <div class="hamzan">
+                                    <img src="images/hamzan.png" alt="מי חמצן" />
+                                    <div class="divShoes">1/2 כפית מי חמצן</div>
+                                </div>
+                                <img class="plus" id="plusS13" src="images/plus.png" alt="פלוס" />
+                                <div class="mivreshetShinaim">
+                                    <img src="images/mivreshetShinaim.png" alt="מברשת שיניים" />
+                                    <div class="divShoes">מברשת שיניים</div>
+                                </div>
+                            </div>
+                            <h4 class="big">מה עושים?</h4>
+                            <p>
+                                מערבבים בקערה אבקת סודה לשתייה, מים ומי חמצן, עד לקבלת משחה.<br />
+                                מברישים בעדינות את המשחה על הנעליים והשרוכים בעזרת מברשת השיניים. <br />
+                                מניחים את הנעליים בשמש למשך 3-4 שעות, עד שהמשחה מתייבשת ומתחילה להיסדק. <br />
+                                לאחר הייבוש, מנערים את הנעליים ומסירים באמצעות מברשת השיניים את שאריות האבקה.
+                            </p>
+                        </section>
+                    </section>
+
+                    <footer>
+                        <div id="footer"></div>
+                        <nav id="footerNav" aria-label="תפריט תחתון">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <a id="redSquareFooter1" href="#">הטיפים שלכם<img id="squareNav1" class="notActive" src="images/redSquare.png" alt="" /></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a id="redSquareFooter2" href="about.html">אודות<img id="squareNav2" src="images/redSquare.png" alt="" /></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a id="redSquareFooter3" href="siteMap.html">מפת אתר<img id="squareNav3" src="images/redSquare.png" alt="" /></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a id="redSquareFooter4" href="contactUs.html">צור קשר<img id="squareNav4" src="images/redSquare.png" alt="" /></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </footer>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
+

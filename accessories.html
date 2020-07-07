@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title> Cleansy - אקססוריז</title>
+    <meta name="description" content="אתר המכיל טיפים מהירים ופשוטים לנקיון הבית ולפרטי לבוש" />
+    <meta name="keywords" content="נקיון, טיפים, מדריכים, הסרת כתמים, כביסה, מקלחת, מטבח, שירותים,כתמים,איך מנקים, איך מסירים, טריקים, הסרת אבנית, ניקוי סירים, ניקוי מחבתות, ניקוי קופסאות אוכל, ניקוי קרש חיתוך, ניקוי קומקום " />
+    <meta name="author" content="אופיר, ספיר, חלי ,יובל" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/accessories.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <link rel="icon" href="images/C logo.png" />
+
+</head>
+<body>
+    <div id="container">
+        <article id="responsive">
+            <div role="main">
+                <header>
+                    <ul id="skip">
+                        <li><a href="#accessoriesSpan">דלג לתוכן העמוד</a></li>
+                    </ul>
+                    <nav id="headerNav" aria-label="תפריט ניווט ראשי">
+                        <ul>
+                            <li><a href="index.html"><img id="homeLogo" src="images/cleansy logo text.png" alt="קלינזי - טיפים לניקיון הבית" title="Cleansy - טיפים לניקיון הבית" /></a></li>
+                            <li>
+                                <div>
+                                    <a href="#" class="navLine default">הסרת כתמים</a>
+                                    <img id="lineNav1" src="images/Line.png" alt="" />
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="clothing.html" class="secondNavStains">פרטי לבוש</a>
+                                        <ul id="navSI">
+                                            <li><a href="clothing.html#foodStainsSpan" class="navStainsInner">כתמי אוכל</a></li>
+                                            <li><a href="clothing.html#oilStainsSpan" class="navStainsInner">כתמי שמן</a></li>
+                                            <li><a href="clothing.html#colorStainsSpan" class="navStainsInner">כתמי צבע</a></li>
+                                            <li><a href="clothing.html#jeansSpan" class="navStainsInner">מסטיק מהג'ינס</a></li>
+                                            <li><a href="clothing.html#shoesSpan" class="navStainsInner">נעליים לבנות</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="secondNavStains notActive">ספות ושטיחים</a></li>
+                                    <li><a href="#" class="secondNavStains notActive">רהיטי עץ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="notActive navLine" href="#">כביסה</a>
+                                    <img id="lineNav2" src="images/Line.png" alt="" />
+                                </div>
+                            </li>
+                            <li id="kav">
+                                <div>
+                                    <a href="#" class="navLine default">מטבח</a>
+                                    <img id="lineNav3" src="images/Line.png" alt="" />
+                                </div>
+                                <ul id="kitchenNav">
+                                    <li><a href="#" class="secondNavKitchen notActive">מקרר</a></li>
+                                    <li><a href="#" class="secondNavKitchen notActive">כיריים</a></li>
+                                    <li><a href="#" class="secondNavKitchen notActive">תנור</a></li>
+                                    <li>
+                                        <a class="secondNavKitchen" href="accessories.html">אקססוריז</a>
+                                        <ul id="navKI">
+                                            <li><a href="accessories.html#removalAvnitSpan" class="navKitchenInner">הסרת אבנית מקומקום</a></li>
+                                            <li><a href="accessories.html#cleaningKufsaSpan" class="navKitchenInner">ניקוי קופסאות אוכל</a></li>
+                                            <li><a href="accessories.html#cleaningKereshSpan" class="navKitchenInner">ניקוי קרש חיתוך</a></li>
+                                            <li><a href="accessories.html#cleaningSirSpan" class="navKitchenInner">ניקוי סירים ומחבתות</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <a class="notActive navLine" href="#">שירותקלחת</a>
+                                    <img id="lineNav4" src="images/Line.png" alt="" />
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--תפריט פירורי לחם-->
+                    <nav id="breadCrumbs" aria-label="תפריט התמצאות">
+                        <ol>
+                            <li><a href="index.html">דף הבית</a></li>
+                            <li>מטבח</li>
+                            <li>אקססוריז</li>
+                        </ol>
+                    </nav>
+                    <!--תפריט אנכי-->
+                    <div id="wrapperSideNav">
+                        <nav id="sideNav" aria-label="תפריט ניווט משני">
+                            <ul>
+                                <li><a id="titleNav" href="#accessoriesSpan">אקססוריז</a></li>
+                                <li><a href="#removalAvnitSpan">הסרת אבנית מקומקום</a></li>
+                                <li><a href="#cleaningKufsaSpan">ניקוי קופסאות אוכל</a></li>
+                                <li><a href="#cleaningKereshSpan">ניקוי קרש חיתוך</a></li>
+                                <li><a href="#cleaningSirSpan">ניקוי סירים ומחבתות</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+              <!--כפתור נגישות-->
+                    <div id="accButton">
+                        <a href="accessoriesAccessible.html">
+
+                            כפתור נגישות <br />
+                            צבעים מנוגדים
+
+                        </a>
+                        <img class="redSquareFull" src="images/redSquareFull.png" alt="" />
+                    </div>
+               
+                    <!--תמונות רקע-->
+                    <div>
+                        <div id="accessoriesTop"></div>
+                        <div id="ketemYellow"></div>
+                        <div id="ketemPink1"></div>
+                        <div id="ketemBlue1"></div>
+                        <div id="ketemYellow1"></div>
+                        <div id="ketemPink2"></div>
+                        <div id="ketemBlue2"></div>
+                        <div id="ketemYellow2"></div>
+                        <div id="ketemPink3"></div>
+                        <div id="ketemBlue3"></div>
+                        <div id="ketemYellow3"></div>
+                        <div id="ketemPink4"></div>
+                        <div id="ketemBlue4"></div>
+                        <div id="ketemYellow4"></div>
+                        <div id="ketemPink5"></div>
+                        <div id="ketemBlue5"></div>
+                        <div id="ketemYellow5"></div>
+                        <div id="ketemPink6"></div>
+                        <div id="ketemBlue6"></div>
+                        <div id="ketemYellow6"></div>
+                    </div>
+                    <div id="front">
+                        <!--כותרת עמוד-->
+                        <span id="accessoriesSpan"></span>
+                        <h1>אקססוריז</h1>
+
+                        <!--קטגוריה ראשונה- הסרת אבנית-->
+                        <section id="removalAvnit">
+                            <span id="removalAvnitSpan"></span>
+                            <h2>הסרת אבנית מקומקום</h2>
+                            <div id="boxAvnit1"></div>
+                            <section id="removalAvnit1">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                                </a>
+                                <p class="contentTitle">
+                                    "שוב האבנית משתלטת על הטעם של הקפה? <br />
+                                    אפילו מנימוס השכן שלי לא יישתה.."
+                                </p>
+                                <br />
+                                <h3>אבנית בקטנה</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="saltLemon">
+                                        <img src="images/saltLemon.png" alt="מלח לימון" />
+                                        <div>כף מלח לימון</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    ממלאים את הקומקום כמעט עד הסוף ומרתיחים.<br />
+                                    מוסיפים מלח לימון ומשאירים למשך 30 דקות. מרוקנים את הקומקום  <br />
+                                    ומרתיחים במים נקיים. חוזרים על ההרתחה מספר פעמים.
+                                </p>
+                            </section>
+
+                            <div id="boxAvnit2"></div>
+                            <section id="removalAvnit2">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון " />
+                                </a>
+                                <h3>אבנית בהגזמה</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="hometz">
+                                        <img src="images/hometz.png" alt="חומץ לבן" />
+                                        <div>כוס חומץ 5%</div>
+                                    </div>
+                                    <img id="plusA1" src="images/plus.png" alt="פלוס" />
+                                    <div class="water">
+                                        <img src="images/water.png" alt="מים" />
+                                        <div>1/2 1 כוסות מים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    מרתיחים בקומקום חומץ ומים יחד ומרוקנים את הקומקום. <br />
+                                    מרתיחים במים נקיים מספר פעמים, עד להעלמת טעם החומץ.
+                                </p>
+                            </section>
+
+                            <div id="boxAvnit3"></div>
+                            <section id="removalAvnit3">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                                </a>
+                                <h3>ללוחמה נגד האבנית</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="soda">
+                                        <img src="images/soda.png" alt="סודה לשתייה" />
+                                        <div>2 כפיות סודה לשתייה</div>
+                                    </div>
+                                    <img id="plusA2" src="images/plus.png" alt="פלוס" />
+                                    <div class="water">
+                                        <img src="images/water.png" alt="מים" />
+                                        <div>3 כוסות מים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    פעם בחודש מרתיחים את המים עם סודה לשתייה. מקררים את המים,<br />
+                                    שוטפים את הקומקום ושומרים על קומקום נקי ללא אבנית.
+                                </p>
+                            </section>
+                        </section>
+
+                        <!--קטגוריה שנייה ניקוי קופסאות אוכל-->
+                        <section id="cleaningKufsa">
+                            <span id="cleaningKufsaSpan"></span>
+                            <h2>ניקוי קופסאות אוכל</h2>
+
+                            <div id="boxKufsa1"></div>
+                            <section id="cleaningKufsa1">
+                                <a href="videoKufsa.html">
+                                    <img class="TVcolor" src="images/TVColor.png" alt="מעבר לקישור סרטון ניקוי קופסאות אוכל" />
+                                </a>
+                                <p class="contentTitle">
+                                    "אם כבר הצלחנו למצוא את המכסה הנכון<br />
+                                    של הקופסה, אז כנראה שהגיע הזמן<br />
+                                    גם לנקות אותה.."
+                                </p>
+                                <br />
+                                <h3>לעצלנים</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="sabon">
+                                        <img src="images/sabon.png" alt="נוזל כלים" />
+                                        <div>נוזל כלים</div>
+                                    </div>
+                                    <img id="plusK1" src="images/plus.png" alt="פלוס" />
+                                    <div class="neiyarSofeg">
+                                        <img src="images/neiyarSofeg.png" alt="נייר סופג" />
+                                        <div>נייר סופג</div>
+                                    </div>
+                                    <img id="plusK2" src="images/plus.png" alt="פלוס" />
+                                    <div class="water">
+                                        <img src="images/water.png" alt="מים" />
+                                        <div>מים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    ממלאים את הקופסה במים מהברז, מוסיפים את סבון הכלים ומכניסים<br />
+                                    פנימה נייר סופג. סוגרים את הקופסה, משקשקים ושוטפים.
+
+                                </p>
+                            </section>
+
+                            <div id="boxKufsa2"></div>
+                            <section id="cleaningKufsa2">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון " />
+                                </a>
+                                <h3>למשקיענים</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="sugar">
+                                        <img src="images/sugar.png" alt="סוכר" />
+                                        <div class="divKufsa">חצי כוס סוכר</div>
+                                    </div>
+                                    <img class="plus" id="plusK3" src="images/plus.png" alt="פלוס" />
+                                    <div class="sabon">
+                                        <img src="images/sabon.png" alt="נוזל כלים" />
+                                        <div class="divKufsa">נוזל כלים</div>
+                                    </div>
+                                    <img class="plus" id="plusK4" src="images/plus.png" alt="פלוס" />
+                                    <div class="ice">
+                                        <img src="images/ice.png" alt="קוביות קרח" />
+                                        <div class="divKufsa">קוביות קרח</div>
+                                    </div>
+                                    <img class="plus" id="plusK5" src="images/plus.png" alt="פלוס" />
+                                    <div class="water">
+                                        <img src="images/water.png" alt="ברז מים" />
+                                        <div class="divKufsa">ברז מים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    ממלאים את הקופסה בסוכר, מוסיפים את נוזל הכלים, קוביות קרח <br />
+                                    ומעט מים. סוגרים את הקופסה, משקשקים ושוטפים.
+
+                                </p>
+                            </section>
+                        </section>
+
+                        <!--קטגוריה שלישית - ניקוי קרש חיתוך-->
+                        <section id="cleaningKeresh">
+                            <span id="cleaningKereshSpan"></span>
+                            <h2>ניקוי קרש חיתוך</h2>
+                            <div id="boxKeresh1"></div>
+                            <section id="cleaningKeresh1">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                                </a>
+                                <p class="contentTitle">
+                                    "איך מנקים קרש חיתוך? אאוץ! נראה לי <br />
+                                    שחתכתי את האבצע.."
+                                </p>
+                                <br />
+                                <h3>טיפול פילינג לקרש</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="lemon">
+                                        <img src="images/lemon.png" alt="לימון" />
+                                        <div>חצי לימון</div>
+                                    </div>
+                                    <img id="plusKe1" src="images/plus.png" alt="פלוס" />
+                                    <div class="salt">
+                                        <img src="images/salt.png" alt="מלח גס" />
+                                        <div>מלח גס</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    מפזרים מעט מלח גס על קרש החיתוך, משפשפים עם הצד הפנימי<br />
+                                    של הלימון בתנועות סיבוביות ושוטפים.
+                                </p>
+                            </section>
+
+                            <div id="boxKeresh2"></div>
+                            <section id="cleaningKeresh2">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                                </a>
+                                <h3>ללוחמה נגד הריח</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="potato">
+                                        <img src="images/potato.png" alt="תפוח אדמה" />
+                                        <div>תפוחי אדמה מגורדים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    מכסים את קרש החיתוך בגרידות תפוחי אדמה,<br />
+                                    משרים 10-15 דקות ושוטפים.
+                                </p>
+                            </section>
+                        </section>
+
+                        <!--קטגוריה רביעית - ניקוי סירים ומחבתות-->
+                        <section id="cleaningSir">
+                            <span id="cleaningSirSpan"></span>
+                            <h2>ניקוי סירים ומחבתות</h2>
+                            <div id="boxSir1"></div>
+                            <section id="cleaningSir1">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                                </a>
+                                <p class="contentTitle">
+                                    "לא רק שהשניצלים נשרפו, עכשיו גם צריך<br />
+                                    לעמוד שעתיים ולקרצף את המחבת?"
+                                </p>
+                                <br />
+                                <h3>לעצלנים</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="sabon">
+                                        <img src="images/sabon.png" alt="נוזל כלים" />
+                                        <div class="divSir">נוזל כלים</div>
+                                    </div>
+                                    <img id="plusS1" src="images/plus.png" alt="פלוס" />
+                                    <div class="avkatkvisa">
+                                        <img src="images/avkatkvisa.png" alt="אבקת כביסה" />
+                                        <div class="divSir">2 כפיות אבקת כביסה</div>
+                                    </div>
+                                    <img id="plusS2" src="images/plus.png" alt="פלוס" />
+                                    <div class="water">
+                                        <img src="images/water.png" alt="מים" />
+                                        <div class="divSir">מים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    ממלאים את הסיר/המחבת במים, נוזל כלים ואבקת כביסה.<br />
+                                    מחממים עד לרתיחה ומערבבים באמצעות כף עץ.
+                                </p>
+                            </section>
+
+                            <div id="boxSir2"></div>
+                            <section id="cleaningSir2">
+                                <a href="#">
+                                    <img class="TVcolor notActive" src="images/TVColor.png" alt="מעבר לקישור סרטון" />
+                                </a>
+                                <h3>למשקיענים</h3>
+                                <h4 class="big">מה צריך?</h4>
+                                <div class="images">
+                                    <div class="hometz">
+                                        <img src="images/hometz.png" alt="חומץ" />
+                                        <div class="divSir2">כוס חומץ</div>
+                                    </div>
+                                    <img id="plusS3" src="images/plus.png" alt="פלוס" />
+                                    <div class="soda">
+                                        <img src="images/soda.png" alt="סודה לשתייה" />
+                                        <div class="divSir2">2 כפיות סודה לשתייה</div>
+                                    </div>
+                                    <img id="plusS4" src="images/plus.png" alt="פלוס" />
+                                    <div class="water">
+                                        <img src="images/water.png" alt="מים" />
+                                        <div class="divSir2">כוס מים</div>
+                                    </div>
+                                </div>
+                                <h4 class="big">מה עושים?</h4>
+                                <p>
+                                    ממלאים את הסיר/המחבת במים ומוסיפים את החומץ.<br />
+                                    מרתיחים ומורידים מהאש.<br />
+                                    מוסיפים את הסודה לשתייה, מחכים מספר דקות ושוטפים במים.
+                                </p>
+                            </section>
+                        </section>
+
+                        <footer>
+                            <div id="footer"></div>
+                            <nav id="footerNav" aria-label="תפריט תחתון">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a id="redSquareFooter1" href="#">הטיפים שלכם<img id="squareNav1" class="notActive" src="images/redSquare.png" alt="" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a id="redSquareFooter2" href="about.html">אודות<img id="squareNav2" src="images/redSquare.png" alt="" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a id="redSquareFooter3" href="siteMap.html">מפת אתר<img id="squareNav3" src="images/redSquare.png" alt="" /></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a id="redSquareFooter4" href="contactUs.html">צור קשר<img id="squareNav4" src="images/redSquare.png" alt="" /></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </div>
+                </div>
+        </article>
+    </div>
+</body>
+</html>

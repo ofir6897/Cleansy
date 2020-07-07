@@ -1,0 +1,158 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+#colorAcc {
+    filter: invert(100%);
+}
+
+/*OVERFLOW-X : מונע גלילה הצידה*/
+body {
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
+    background-color:black;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#responsive {
+    position: relative;
+}
+header {
+    position: relative;
+}
+/*/עיצוב תפריט פירורי לחם/*/
+
+#breadCrumbs {
+    position: absolute;
+    top: 10px;
+    z-index: 3;
+}
+
+    #breadCrumbs ol li {
+        display: inline-block;
+        font-size: 14pt;
+    }
+
+        #breadCrumbs ol li a {
+            color: #272727;
+        }
+
+        #breadCrumbs ol li:after {
+            content: ">";
+        }
+
+        #breadCrumbs ol li:last-child:after {
+            content: "";
+        }
+
+        #breadCrumbs ol li:last-child {
+            color: #ea5746;
+            font-weight: bold;
+        }
+
+/*כפתור נגישות*/
+
+#accButton .redSquareFull {
+    position: absolute;
+    top: 70px;
+    right: 1135px;
+    width: 145px;
+    height: 55px;
+    z-index: 6;
+}
+
+
+#accButton a {
+    position: absolute;
+    top: 75px;
+    left: 23px;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 120%;
+    text-align: center;
+    z-index: 7;
+    text-decoration: none;
+}
+
+/*דלג לתוכן האתר*/
+
+#skip {
+    position: absolute;
+    left: -99999px;
+    height: 10px;
+    width: 10px;
+}
+
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none;
+        font-size: 19pt;
+    }
+
+    #skip a {
+        position: absolute;
+        top: 130px;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            top: 50px;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ff5a44;
+            border: 1px dotted #272727;
+            background-color: white;
+        }
+
+
+/*ריבוע לבן*/
+#whiteSquare {
+    background-image: url('../images/WhiteSquareVideo1.png');
+    background-repeat: no-repeat;
+    width: 950px;
+    height: 640px;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: -20px;
+    right: 165px;
+}
+
+
+
+video {
+    position: absolute;
+    top: 30px;
+    right: 285px;
+    z-index: 4;
+}
+
+img {
+    position: absolute;
+    top: 60px;
+    right: 1008px;
+    width: 32px;
+    height: 32px;
+    z-index: 5;
+}

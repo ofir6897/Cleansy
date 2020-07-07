@@ -1,0 +1,480 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+.colorAcc {
+    filter: invert(100%);
+}
+body {
+    direction: rtl;
+    width: 1280px;
+    margin: 0 auto;
+    font-family: 'Heebo', sans-serif;
+    color: #272727;
+    font-size: 14pt;
+    line-height: 150%;
+    overflow-x: hidden;
+    background-color:black;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#responsive {
+    position: relative;
+}
+
+.notActive {
+    cursor: not-allowed;
+}
+
+.default {
+    cursor: default;
+}
+
+/*תפריט ניווט*/
+/*לוגו בתוך התפריט*/
+#homeLogo {
+    width: 135px;
+    margin-top: -16px;
+}
+
+#headerNav {
+    position: fixed;
+    width: 1280px;
+    top: 0px;
+    -webkit-box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.50);
+    box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.50);
+    z-index: 5;
+}
+/* שלב ראשון - העלמת תבליטים*/
+nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*שלב שני - תפריט אופקי וצמוד*/
+nav li a { 
+    display: inline-block;
+    float: right;
+}
+/*העיצוב עצמו*/
+#headerNav ul li a {
+    display: block;
+    background-color: white;
+    color: #272727;
+    width: 256px;
+    height: 44px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 19pt;
+}
+
+#headerNav ul li .secondNavStains {
+    text-align: right;
+    padding-right: 60px;
+    width: 196px;
+}
+
+#headerNav ul li .navStainsInner {
+    text-align: right;
+    padding-right: 10px;
+    width: 246px;
+}
+
+#headerNav ul li #navSI {
+    position: absolute;
+    top: 0px;
+    right: 256px;
+}
+
+#headerNav ul li .secondNavKitchen {
+    text-align: right;
+    padding-right: 96px;
+    width: 160px;
+}
+
+#headerNav ul li #kitchenNav {
+    position: absolute;
+    top: 62px;
+    right: 768px;
+}
+
+#headerNav ul li #navKI {
+    position: absolute;
+    top: 185px;
+    right: 245px;
+}
+
+#headerNav ul li .navKitchenInner {
+    text-align: right;
+    padding-right: 5px;
+    width: 246px;
+}
+
+
+#headerNav ul li .topNav {
+    display: block;
+    background-color: white;
+    color: #272727;
+    width: 256px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19pt;
+}
+
+/*מעבר עכבר מוסיף תמונה*/
+#headerNav ul li:hover img {
+    display: inline-block;
+}
+
+/*מיקומים קווים*/
+/*קו הסרת כתמים*/
+#lineNav1 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 298px;
+    display: none;
+}
+
+/*קו כביסה*/
+#lineNav2 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 558px;
+    display: none;
+}
+
+/*קו מטבח*/
+#lineNav3 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 816px;
+    display: none;
+}
+
+/*קו שירותקלחת*/
+#lineNav4 {
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    top: 43px;
+    right: 1070px;
+    display: none;
+}
+
+/*מעבר עכבר משנה צבע*/
+#headerNav ul li a:hover {
+    position: relative;
+    color: #ea5746;
+    font-weight: bold;
+}
+
+/*הגדרות של תת תפריט*/
+#headerNav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+
+#headerNav ul li:hover ul {
+    display: block;
+    right: 256px;
+    height: -20px;
+    top: 62px;
+    -webkit-box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+    box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+}
+
+
+    /*הגדרות של תת תפריט משני*/
+
+    #headerNav ul li:hover ul li ul { /*תת תפריט לא יופיע ומיקומו יהיה קבוע*/
+        display: none;
+        position: absolute;
+    }
+
+    #headerNav ul li:hover ul li:hover ul {
+        display: block;
+        right: 256px;
+        height: -20px;
+        top: 60px;
+        -webkit-box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+        box-shadow: 0px 16px 13px -1px rgba(0,0,0,0.12);
+    }
+
+
+#kitchenNav {
+    right: 768px;
+    top: 60px;
+}
+
+
+
+/*כפתור נגישות*/
+
+#accButton .blueSquareFull {
+    position: fixed;
+    top: 70px;
+    left: -10px;
+    width: 150px;
+    height: 55px;
+    z-index: 6;
+}
+
+
+#accButton a {
+    position: fixed;
+    top: 75px;
+    left: 18px;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 120%;
+    text-align: center;
+    z-index: 7;
+    text-decoration: none;
+}
+
+    #accButton a:visited {
+        text-decoration: none;
+    }
+
+    /*דלג לתוכן העמוד*/
+
+#skip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+    #skip li {
+        list-style-type: none
+    }
+
+    #skip a {
+        position: absolute;
+        top: 200px;
+        font-size:19pt;
+    }
+
+        #skip a:focus, #skip a:active {
+            position: relative;
+            left: 0;
+            top: -50px;
+            z-index: 9999;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            padding: 30px 45px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border: 1px dotted #272727;
+            background-color: black;
+        }
+
+/*/עיצוב תפריט פירורי לחם/*/
+
+#breadCrumbs {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+}
+
+    #breadCrumbs ol li {
+        display: inline-block;
+        font-size: 14pt;
+    }
+
+        #breadCrumbs ol li a {
+            color: #272727;
+        }
+
+        #breadCrumbs ol li:after {
+            content: ">";
+        }
+
+        #breadCrumbs ol li:last-child:after {
+            content: "";
+        }
+
+        #breadCrumbs ol li:last-child {
+            color: #ea5746;
+            font-weight: bold;
+        }
+
+#sent {
+    position: absolute;
+    top: 570px;
+    right: 335px;
+}
+
+
+
+
+
+#right {
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+#left {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+
+h1 {
+    font-size: 40pt;
+    font-weight: normal;
+}
+
+#front section p {
+    margin-top: 25px;
+}
+
+a {
+    color: #1fb0c0
+}
+
+#HIT {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+/*הזזת הכל למטה*/
+#allDown {
+    margin-top: 100px;
+}
+
+
+/*כל המלל*/
+#front {
+    z-index: 2;
+    position: relative;
+    width: 750px;
+    right: 240px;
+    top: 100px;
+}
+
+
+/*קישור ללוגו הפקולטה*/
+section a img {
+    width: 130px;
+}
+
+/*ריבוע לבן*/
+#whiteSquare {
+    background-image: url('../images/whiteSquareContactUs.png');
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 870px;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 185px;
+}
+
+/*פוטר*/
+#footer {
+    background-image: url('../images/footerYellow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 900px;
+    right: 0px;
+    z-index: 0;
+    background-size: cover;
+    width: 1280px;
+    height: 150px;
+}
+
+
+
+#footerNav {
+    position: absolute;
+    width: 1000px;
+    top: 988px;
+    z-index: 5;
+    right: 140px;
+}
+
+
+    #footerNav ul li a { /*העיצוב עצמו*/
+        display: block;
+        color: #272727;
+        width: 160px;
+        height: 40px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 21px;
+        margin-right: 80px;
+        font-size: 19pt;
+    }
+
+    #footerNav ul #kav img {
+        display: inline-block;
+    }
+
+    /*/מעבר עכבר מוסיף תמונה/*/
+    #footerNav ul li:hover img {
+        display: inline-block;
+    }
+
+/*מיקומים מסגרות*/
+
+#squareNav1 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 13px;
+    right: 76px;
+    display: none;
+}
+
+#squareNav2 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 13px;
+    right: 320px;
+    display: none;
+}
+
+#squareNav3 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 13px;
+    right: 558px;
+    display: none;
+}
+
+#squareNav4 {
+    width: 170px;
+    height: 43px;
+    position: absolute;
+    top: 13px;
+    right: 795px;
+    display: none;
+}
